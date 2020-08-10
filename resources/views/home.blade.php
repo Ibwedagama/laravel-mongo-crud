@@ -37,8 +37,8 @@
                                 <td>
                                     <a href="{{route('post.form', $post = $p->_id)}}"
                                         class="badge badge-warning">Update</a>
-                                    <a href="{{route('post.delete', $post = $p->_id)}}"
-                                        class="badge badge-danger">Delete</a>
+                                    <a href="{{route('post.delete', $post = $p->_id)}}" class="badge badge-danger"
+                                        onclick="return alert('Are you sure you want to delete this post?')">Delete</a>
                                 </td>
                             </tr>
                             @php
